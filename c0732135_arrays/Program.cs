@@ -16,7 +16,17 @@ namespace c0732135_arrays
             StudentInformation Mark = new StudentInformation("Mark", 0.2, 3);
             StudentInformation Steve = new StudentInformation("Steve", 2.9, 16);
             StudentInformation Cindy = new StudentInformation("Cindy", 3.9, 187);
+            var StudentList = new List<StudentInformation>();
+            StudentList.Add(Mary);
+            StudentList.Add(John);
+            StudentList.Add(Mark);
+            StudentList.Add(Steve);
+            StudentList.Add(Cindy);
 
+            foreach(var student in StudentList)
+            {
+                Console.WriteLine(student.name);
+            }
 
 
 
@@ -37,4 +47,5 @@ namespace c0732135_arrays
             Attendance = aAttendance;
         }
     }
+  
 }
